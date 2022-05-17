@@ -62,7 +62,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CSRF_COOKIE_SECURE = False
+CSRF_TRUSTED_ORIGINS=['https://backendpark-pkwttxurqa-uc.a.run.app']
+
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS= True
 CORS_ORIGIN_WHITELIST = [
