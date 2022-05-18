@@ -69,6 +69,9 @@ class TicketViewSet(viewsets.ModelViewSet):
                 newticket["vehicle"] = int(vehiculo.id)
                 newticket["empleado"] = int(body["empleado"])
                 newticket["estacion"] = int(body["estacion"])
+                newticket["namedriver"] = body["namedriver"]
+                newticket["dpi"] = body["dpi"]
+
             else:
                 response= TemplateResponse(
                 status=status.HTTP_400_BAD_REQUEST,
